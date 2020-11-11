@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function endedEventHandler()
+        {
+            var audioElement=document.getElementById("audioRepeat");
+            audioElement.src="sample2.ogg";
+            audioElement.autoplay="true";
+        }
+        </script>
+</head>
+<body>
+    <h1> Audio Example</h1>
+    <audio controls src="sample1.mp3">
+        Browser does not support the audio
+    </audio>
+
+    <h2> Second audio</h2>
+    <audio controls >
+        <source src="sample2.ogg" type="audio/ogg">
+        <source src="sample1.mp3" type="audio/mpeg">
+        
+            Browser does not support the audio 
+    </audio>
+    <h2> Audio with loop option</h2>
+    <audio controls loop>
+        <source src="sample1.mp3" type="audio/mpeg">
+        <source src="sample2.ogg" type="audio/ogg">
+        
+        
+            Browser does not support the audio 
+    </audio>
+    <h2> Audio with loop option</h2>
+    <audio controls autoplay muted>
+        <source src="sample1.mp3" type="audio/mpeg">
+        <source src="sample2.ogg" type="audio/ogg">
+        
+        
+            Browser does not support the audio 
+    </audio>
+    <h2>
+        <h2> Audio with multiple audios played after one another</h2>
+    <audio controls id="audioRepeat" onended="endedEventHandler();">
+        <source src="sample1.mp3" type="audio/mpeg">
+        
+        
+            Browser does not support the audio 
+    </audio>
+    </h2>
+</body>
+</html>
