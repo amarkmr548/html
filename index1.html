@@ -1,0 +1,222 @@
+<!-- Hyper Text Mark up language -->
+<!-- Tree format data structure
+One root node
+can have many children
+parent child realtionship
+one child - one parent
+
+Tags 
+<html > Contents</html>
+<h1 id="header1">Welcome to Citi </h1>
+
+Nesting of tags
+Syntax -- will never checked
+Load the page 
+Disadv 
+
+lowercase 
+-->
+<! DOCTYPE html>
+<html>
+    <head>
+        <!-- non visual elements-->
+        <title>
+            My first Html example
+        </title>
+        <link href="style1.css" rel="stylesheet" type="text/css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <style>
+            h1
+            {
+                background-color: aquamarine;
+            }
+            #ulNav
+            {
+                list-style-type:none;
+                background-color: blue;
+                color:white;
+            }
+            #ulNav li
+            {
+                background-color: blue;
+                color:white;
+                display: inline-block;
+                border:3px solid cyan;
+                padding: 5px;
+                margin-right: 5px;;
+            }
+
+            #ulNav li:hover
+            {
+                background-color: cornflowerblue;
+            }
+            .pinkBg
+            {
+                background-color: pink;
+            }
+        </style>
+        <script>
+            // java script code
+            //client script scripting lang -- js
+            //alert("Welcome to the training");
+        </script>
+        <script src="script1.js"></script>
+        <meta charset="utf-8">
+        <meta name="keywords" content="html css js how to work in html">
+
+    </head>
+    <body>
+        <!-- visual elements-->
+        <!-- h1,h2,h3,h4,h5,h6-->
+        <!-- TAG  -- basic default style associated with it-->
+        <h1>
+            Welcome to Citibank
+        </h1>
+        <h3 class="pinkBg">
+            Welcome to Citibank
+        </h3>
+        <h6>
+            Welcome to Citibank
+        </h6>
+        <header>
+            <img src="citiLogo.png" alt="Logo of citibank" style="float:left; height:100px;width:100px"/>
+            <h2 >CITIBANK</h2>
+            <h2>Citi</h2>
+            <h2>Citi</h2>
+            <h2>Citi</h2>
+            
+        </header>
+        <br/>
+        <ul id="ulNav">
+            <li>
+                Products
+            </li>
+            <li>
+                Feedback
+            </li>
+            <li>
+                About Us
+            </li>
+            <li>
+                Contact Us
+            </li>
+        </ul>
+        <div>
+            <h1> My favourite travel destinations</h1>
+            <ol class="pinkBg" style="list-style-type: lower-greek;">
+                <li>
+                    Paris
+                </li>
+                <li>
+                    Australia
+                </li>
+                <li>
+                    Dubai
+                </li>
+            </ol>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro voluptates 
+                ipsum modi! Quaerat, magni nemo iste reprehenderit illum laudantium, 
+                accusamus, dolor nam consequatur fugit eveniet quasi omnis necessitatibus atque!
+                <br />THis is my contents
+                This is some <b>bold </b>contents
+                This is some <strong>strong</strong> </strong>contents
+                This is some <i>italic </i>contents
+                I want to have some H<sub>2</sub>O
+                a<sup>2</sup> + b<sup>2</sup>=c<sup>2</sup>
+                I want to <strike>strike</strike> contents
+                I want to <s>strike</s> contents
+                <u>The contents are going to be underlined</u>
+                <blockquote cite="https://www.briantracy.com/blog/personal-success/26-motivational-quotes-for-success/">“The Best Way To Get Started Is To Quit Talking And Begin Doing.” </blockquote>
+            </p>
+            <address>
+                Article was written by John
+                Contact us:
+                John
+                T.nagar
+                Chennai
+                </address> 
+            <p> 
+                This is <span style="background-color: blueviolet;">some</span> text 
+            </p>                  
+
+            
+        </div>
+        <div>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_parent" >Go to the official doc</a>
+            <a class="pinkBg" href="index2.html">SEcond Example</a>
+            <a href="#ulNav">Top</a>
+        </div>
+        <a href="http://www.google.com">
+        <img src="citiLogo.png" id="citiLogoImg"/>
+        </a>
+        <img src="flower.jpeg" onclick="clickImageEventHandler();" id="imgFlower1" />
+
+        <table border="2">
+            <caption> Employee Details</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Employee Id
+                    </th>
+                    <th>
+                        Employee Name
+                    </th>
+                    <th>
+                        Department Id
+                    </th>
+                    <th>
+                        Location
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        101
+                    </td>
+                    <td> 
+                        Sara
+                    </td>
+                    <td>HR</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Lara</td>
+                    <td>Admin</td>
+                    <td>Pune</td>
+
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td> John</td>
+                    <td> HR</td>
+                    <td> Pune</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table1">
+            <tr>
+                <td>
+                    <img src="woman.jpeg" alt="Image of a woman">
+                </td>
+                <td>
+                    <p>LIFE AND MONEY BY CITI
+                        How to Use the Citi Mobile® App to Bank with Your Phone
+                        Put the ability to manage your finances within reach </p>
+                </td>
+            </tr>
+        </table>
+        <!-- common attributes
+        id,
+        class
+        style
+        title(tool tip)
+
+        -->
+    </body>
+</html>

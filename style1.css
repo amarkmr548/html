@@ -1,0 +1,32 @@
+table
+{
+    background-color: brown;
+    margin:15px;
+    
+}
+thead
+{
+    background-color: coral;
+    color:bisque;
+    font-size:36px;
+}
+td
+{
+    border:2px groove sandybrown;
+    font-size:28px;
+    color:wheat;
+    padding:10px;
+}
+th
+{
+    padding: 20px;
+}
+#table1
+{
+    margin:50px;
+
+}
+#table1 td
+{
+    padding:30px;
+}
